@@ -1,0 +1,241 @@
+/* CSS styling for basic portfolio site */
+
+
+/* Global Styling */
+body {
+   font-family: Arial, Helvetica, sans-serif;
+   color: #777777;
+   margin: 0px 0px;
+   background-image: url("../images/dust_scratches.png");
+   background-position: center;
+   background-repeat: repeat;
+}
+
+a{
+   color: #777;
+   text-decoration: none;
+} 
+
+a:hover {
+   color: darkgray;
+}
+
+hr {
+   color: #ccc;
+   margin: 0px 10px 16px 10px;
+}
+
+/* header syles */
+header {
+   background-color: #ffffff;
+   border-bottom: 2px solid #ccc;
+   margin: 0px;
+}
+
+.container {   
+   margin: auto;
+   width: 960px;
+   overflow: hidden;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header h1 {
+   float: left;
+   margin: 0px;
+   padding: 20px 20px;
+   background-color: #4aaaa5;
+   color: #fff;
+}
+
+header ul {
+   float: right;
+   margin-right: 30px;
+}
+
+header li {
+   display: inline;
+   padding: 5px 5px;
+   border-right: 1px solid #ccc;
+}
+
+#lastLink {
+   border: none;
+}
+
+/* Section Styles */
+section {
+   width: 960px;
+   height: 400px;
+   margin: auto;
+   position: relative;
+   top: 50%;
+   transform: translateY(50%);
+   background-color: #fff;
+   border: 1px solid #ddd;
+}
+
+section h2 {
+   margin: 15px 15px 15px 50px;
+   vertical-align: center;
+   color: #4aaaa5;
+}
+
+section img {
+   float: left;
+   margin: 10px 10px;
+}
+
+section p {
+   margin: 30px;
+   line-height: 2;
+   text-align: center;
+}
+
+#portfolioPic {
+   margin-left: 40px;
+}
+
+/* input form */
+form * {
+   display: block;
+   margin: 10px 50px 10px 50px;
+   width: 860px;
+   height: 20px;
+}
+
+form textarea {
+   height: 100px;
+}
+
+form input[type=submit] {
+   font-size: 15px;
+   width: 100px;
+   padding: 15px 20px 30px;
+   text-align: center;
+   background-color: #4aaaa5;
+   color: #fff;
+}
+
+/* footer */
+footer {
+   background-color:#666;
+   color: #fff;
+   position: fixed;
+   bottom: 0;
+   text-align: center;
+   width: 100%;
+   height: 75px;
+   border-top: 10px solid #4aaaa5;
+}
+
+@media screen and (max-width: 980px) {
+   body {
+      width: 100%;
+   }
+
+   .container {
+      width: 100%;
+   }
+
+   section {
+      width: 70%;
+      margin-top: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+      transform: initial;
+   }
+
+   #portfolioSection {
+      height: 500px;
+   }
+   
+   form * {
+   width: 80%;
+   }
+
+}
+
+@media screen and (max-width: 768px) {
+   body {
+      width: 100%;
+   }
+
+   .container {
+      width: 100%;
+   }
+
+   section {
+      width: auto;
+      margin-top: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+      transform: initial;
+   }
+
+   #portfolioSection {
+      height: 500px;
+   }
+   
+   form * {
+   width: 80%;
+   }
+
+}
+
+@media screen and (max-width: 640px) {
+   body {
+      width: 100%;
+   }
+   
+   h1 {
+      width: 100%;
+      text-align: center;
+      padding-bottom: 10px;
+   }
+
+   nav{
+      display: block;
+   }
+
+   header ul {
+      float: none;
+      text-align: center;
+   }
+
+   section {
+      width: auto;
+      height: auto;
+      margin-top: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+      transform: initial;
+   }
+
+   section h2 {
+      text-align: center;
+      margin-right: 15%;
+   }
+
+   section img {
+      float: none;
+      display: block;
+      margin: auto;
+   }
+   .container {
+      width: 100%;
+   }
+
+   #portfolioPic img{
+      margin-top: 10px;
+      margin-bottom: 10px;
+   }
+
+   #portfolioFooter {
+      position: initial;
+   }
+   form * {
+      width: 80%;
+   }
+
+}
+
