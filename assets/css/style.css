@@ -62,38 +62,49 @@ header li {
    border: none;
 }
 
-/* Section Styles */
-section {
-   width: 960px;
-   height: 400px;
-   margin: auto;
-   position: relative;
-   top: 50%;
-   transform: translateY(50%);
-   background-color: #fff;
-   border: 1px solid #ddd;
-}
 
-section h2 {
-   margin: 15px 15px 15px 50px;
-   vertical-align: center;
-   color: #4aaaa5;
-}
-
-section img {
-   float: left;
-   margin: 10px 10px;
-}
-
-section p {
-   margin: 30px;
-   line-height: 2;
+#portfolioSection {
+   width: 90vw;
    text-align: center;
+   background-color: #fff;
+   margin: 5vw;
 }
 
-#portfolioPic {
-   margin-left: 40px;
+#portfolioPics {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin: 20px;
 }
+
+div.gallery {
+   border: 1px solid #ccc;
+ }
+ 
+ div.gallery:hover {
+   border: 1px solid #777;
+ }
+ 
+ div.gallery img {
+   width: 100%;
+   height: auto;
+ }
+ 
+ div.desc {
+   padding: 15px;
+   text-align: center;
+ }
+ 
+ * {
+   box-sizing: border-box;
+ }
+
+ .responsive {
+   padding: 0 6px;
+   float: left;
+   width: 24.99999%;
+ }
+ 
 
 /* input form */
 form * {
@@ -144,10 +155,6 @@ footer {
       margin-right: 10px;
       transform: initial;
    }
-
-   #portfolioSection {
-      height: 500px;
-   }
    
    form * {
    width: 80%;
@@ -155,7 +162,7 @@ footer {
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
    body {
       width: 100%;
    }
@@ -164,25 +171,19 @@ footer {
       width: 100%;
    }
 
-   section {
-      width: auto;
-      margin-top: 20px;
-      margin-left: 10px;
-      margin-right: 10px;
-      transform: initial;
-   }
-
-   #portfolioSection {
-      height: 500px;
-   }
    
    form * {
    width: 80%;
    }
 
+   .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 500px) {
    body {
       width: 100%;
    }
@@ -202,40 +203,22 @@ footer {
       text-align: center;
    }
 
-   section {
-      width: auto;
-      height: auto;
-      margin-top: 20px;
-      margin-left: 10px;
-      margin-right: 10px;
-      transform: initial;
-   }
-
-   section h2 {
-      text-align: center;
-      margin-right: 15%;
-   }
-
-   section img {
-      float: none;
-      display: block;
-      margin: auto;
-   }
+   
    .container {
       width: 100%;
    }
 
-   #portfolioPic img{
-      margin-top: 10px;
-      margin-bottom: 10px;
-   }
-
+  
    #portfolioFooter {
       position: initial;
    }
    form * {
       width: 80%;
    }
+
+   .responsive {
+      width: 100%;
+    }
 
 }
 
